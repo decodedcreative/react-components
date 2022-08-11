@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "react-components": "libs/react-components",
+    "react-components-app": "apps/react-components-app",
+    "react-components-app-e2e": "apps/react-components-app-e2e",
+    "react-components-e2e": "apps/react-components-e2e"
+  }
+}
