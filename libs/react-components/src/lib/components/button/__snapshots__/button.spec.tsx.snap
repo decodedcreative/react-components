@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Button - Disabled should match the disabled button snapshot 1`] = `
+.c0 {
+  background-color: #ffffff;
+  border: 2px solid #006de3;
+  color: #006de3;
+  cursor: pointer;
+  word-break: break-word;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 5px;
+  padding: 10px 28px;
+}
+
+.c0:disabled,
+.c0:disabled:hover,
+.c0[aria-disabled='true'],.c0[aria-disabled='true']:hover {
+  background-color: #f6f6f6;
+  color: #8e8e8e;
+  border-color: #8e8e8e;
+}
+
+<button
+  className="c0"
+  disabled={true}
+  type="button"
+>
+  Disabled button
+</button>
+`;
+
+exports[`Button Button - Variants should match the primary button snapshot 1`] = `
+.c0 {
+  background-color: #ffffff;
+  border: 2px solid #006de3;
+  color: #006de3;
+  cursor: pointer;
+  word-break: break-word;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 5px;
+  padding: 10px 28px;
+  background-color: #006de3;
+  color: #ffffff;
+}
+
+.c0:disabled,
+.c0:disabled:hover,
+.c0[aria-disabled='true'],.c0[aria-disabled='true']:hover {
+  background-color: #f6f6f6;
+  color: #8e8e8e;
+  border-color: #8e8e8e;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  Button text
+</button>
+`;
+
+exports[`Button Button - Variants should match the secondary button snapshot 1`] = `
+.c0 {
+  background-color: #ffffff;
+  border: 2px solid #006de3;
+  color: #006de3;
+  cursor: pointer;
+  word-break: break-word;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 5px;
+  padding: 10px 28px;
+}
+
+.c0:disabled,
+.c0:disabled:hover,
+.c0[aria-disabled='true'],.c0[aria-disabled='true']:hover {
+  background-color: #f6f6f6;
+  color: #8e8e8e;
+  border-color: #8e8e8e;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  Button text
+</button>
+`;
