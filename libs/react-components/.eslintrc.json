@@ -1,5 +1,14 @@
 {
-  "extends": ["plugin:@nrwl/nx/react", "../../.eslintrc.json"],
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "plugin:@nrwl/nx/react",
+    "../../.eslintrc.json"
+  ],
+  "globals": {
+    "screen": true
+  },
   "ignorePatterns": ["!**/*"],
   "overrides": [
     {

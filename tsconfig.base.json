@@ -3,12 +3,12 @@
   "compilerOptions": {
     "rootDir": ".",
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es2017",
     "module": "esnext",
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@react-components/react-components": [
-        "libs/react-components/src/index.ts"
+        "libs/react-components/src/components/index.ts"
       ]
     }
   },

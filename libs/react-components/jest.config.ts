@@ -7,4 +7,5 @@ export default {
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: '../../coverage/libs/react-components',
+  setupFilesAfterEnv: ['./src/scripts/jest-setup.config.ts'],
 };
