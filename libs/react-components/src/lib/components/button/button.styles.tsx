@@ -1,16 +1,16 @@
 import styled, { css } from 'styled-components';
 import { ButtonProps } from './button';
 
-export const StyledButton = styled('button')<ButtonProps>`
+const StyledButton = styled('button')<ButtonProps>`
   background-color: ${(props) => props.theme.colors.color10};
-  border: ${(props) => props.theme.button.borderWidth} solid
+  border: ${(props) => props.theme.components.button.borderWidth} solid
     ${(props) => props.theme.colors.interactive};
   color: ${(props) => props.theme.colors.interactive};
   cursor: pointer;
   word-break: break-word;
   user-select: none;
-  border-radius: ${(props) => props.theme.borderRadius};
-  padding: ${(props) => props.theme.button.padding};
+  border-radius: ${(props) => props.theme.general.borderRadius};
+  padding: ${(props) => props.theme.components.button.padding};
   ${(props) =>
     props.variant === 'primary' &&
     css`
@@ -26,3 +26,5 @@ export const StyledButton = styled('button')<ButtonProps>`
     border-color: ${(props) => props.theme.colors.color50};
   }
 `;
+
+export default StyledButton;

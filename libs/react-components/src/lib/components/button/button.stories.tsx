@@ -1,7 +1,5 @@
-import React from 'react';
-import { Story, Meta } from '@storybook/react';
-
-import Button, { ButtonProps } from './button';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import Button from './button';
 
 export default {
   title: 'Theme/Button',
@@ -24,9 +22,9 @@ export default {
     variant: 'secondary',
     disabled: false,
   },
-} as Meta;
+} as ComponentMeta<typeof Button>;
 
-const Template: Story<ButtonProps> = (args) => (
+const Template: ComponentStory<typeof Button> = (args) => (
   <Button {...args}>Button Text</Button>
 );
 

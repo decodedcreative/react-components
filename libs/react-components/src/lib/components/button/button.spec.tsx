@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
-import { lightTheme } from '../../theme/';
+import { lightTheme } from '../../themes';
 import Button, { ButtonProps } from './button';
 import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';
