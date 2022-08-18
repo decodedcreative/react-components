@@ -7,6 +7,8 @@ const StyledButton = styled('button')<ButtonProps>`
     ${(props) => props.theme.colors.interactive};
   color: ${(props) => props.theme.colors.interactive};
   cursor: pointer;
+  font-family: ${(props) => props.theme.typography.fontFamily};
+  font-size: ${(props) => props.theme.components.button.fontSize};
   word-break: break-word;
   user-select: none;
   border-radius: ${(props) => props.theme.general.borderRadius};
