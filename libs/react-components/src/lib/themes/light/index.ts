@@ -1,6 +1,7 @@
 import colors from './colors';
 import components from './components';
 import general from './general';
+import spacing from './spacing';
 import typography from './typography';
 
 const lightTheme = {
@@ -8,6 +9,7 @@ const lightTheme = {
   colors,
   components,
   general,
+  spacing,
   typography,
 };
 
