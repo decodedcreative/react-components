@@ -6,6 +6,8 @@ exports[`Button Button - Disabled should match the disabled button snapshot 1`] 
   border: 2px solid #006de3;
   color: #006de3;
   cursor: pointer;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 1rem;
   word-break: break-word;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -13,6 +15,12 @@ exports[`Button Button - Disabled should match the disabled button snapshot 1`] 
   user-select: none;
   border-radius: 5px;
   padding: 10px 28px;
+}
+
+.c0:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #ffffff,0 0 0 4px #006de3;
 }
 
 .c0:disabled,
@@ -38,6 +46,8 @@ exports[`Button Button - Variants should match the primary button snapshot 1`] =
   border: 2px solid #006de3;
   color: #006de3;
   cursor: pointer;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 1rem;
   word-break: break-word;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -47,6 +57,12 @@ exports[`Button Button - Variants should match the primary button snapshot 1`] =
   padding: 10px 28px;
   background-color: #006de3;
   color: #ffffff;
+}
+
+.c0:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #ffffff,0 0 0 4px #006de3;
 }
 
 .c0:disabled,
@@ -71,6 +87,8 @@ exports[`Button Button - Variants should match the secondary button snapshot 1`]
   border: 2px solid #006de3;
   color: #006de3;
   cursor: pointer;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 1rem;
   word-break: break-word;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -78,6 +96,12 @@ exports[`Button Button - Variants should match the secondary button snapshot 1`]
   user-select: none;
   border-radius: 5px;
   padding: 10px 28px;
+}
+
+.c0:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #ffffff,0 0 0 4px #006de3;
 }
 
 .c0:disabled,

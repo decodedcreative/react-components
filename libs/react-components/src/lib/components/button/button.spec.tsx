@@ -11,9 +11,10 @@ const createComponentJSX = ({
   variant,
   disabled,
   type = 'button',
+  as,
 }: ButtonProps) => (
   <ThemeProvider theme={lightTheme}>
-    <Button variant={variant} type={type} disabled={disabled}>
+    <Button variant={variant} type={type} disabled={disabled} as={as}>
       {children}
     </Button>
   </ThemeProvider>
@@ -24,10 +25,11 @@ const createComponentRender = ({
   variant,
   disabled,
   type = 'button',
+  as,
 }: ButtonProps) =>
   render(
     <ThemeProvider theme={lightTheme}>
-      <Button variant={variant} type={type} disabled={disabled}>
+      <Button variant={variant} type={type} disabled={disabled} as={as}>
         {children}
       </Button>
     </ThemeProvider>
@@ -52,6 +54,22 @@ describe('Button', () => {
       const primaryButtonJSON = renderer.create(primaryButton).toJSON();
       expect(primaryButtonJSON).toMatchSnapshot();
     });
+  });
+
+  describe('Button - Element Types', () => {
+    it('should render as a button', () => {
+      const component = createComponentRender({} as ButtonProps);
+      const button = component.getByRole('button');
+      expect(button).toBeTruthy();
+    });
+    // it('should render as an anchor', () => {
+    //   const component = createComponentRender({
+    //     as: 'a',
+    //   } as ButtonProps);
+    //   const button = component.getByRole('button');
+    //   console.log(button);
+    //   expect(button).toBeFalsy();
+    // });
   });
 
   describe('Button - Disabled', () => {

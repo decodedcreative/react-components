@@ -13,12 +13,23 @@ const StyledButton = styled('button')<ButtonProps>`
   user-select: none;
   border-radius: ${(props) => props.theme.general.borderRadius};
   padding: ${(props) => props.theme.components.button.padding};
+
+  ${(props) => css`
+    &:focus-visible {
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      box-shadow: 0 0 0 2px ${props.theme.colors.color10},
+        0 0 0 4px ${props.theme.colors.interactive};
+    }
+  `};
+
   ${(props) =>
     props.variant === 'primary' &&
     css`
       background-color: ${props.theme.colors.interactive};
       color: ${props.theme.colors.color10};
     `};
+
   &:disabled,
   &:disabled:hover,
   &[aria-disabled='true'],
@@ -27,6 +38,12 @@ const StyledButton = styled('button')<ButtonProps>`
     color: ${(props) => props.theme.colors.color50};
     border-color: ${(props) => props.theme.colors.color50};
   }
+
+  ${(props) =>
+    props.as === 'a' &&
+    css`
+      display: inline-flex;
+    `};
 `;
 
 export default StyledButton;

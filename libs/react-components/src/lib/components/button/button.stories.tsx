@@ -4,6 +4,15 @@ import Button from './button';
 export default {
   title: 'Theme/Button',
   component: Button,
+  parameters: {
+    backgrounds: {
+      default: 'Light',
+      values: [
+        { name: 'Light', value: '#ffffff' },
+        { name: 'Dark', value: '#161b2f' },
+      ],
+    },
+  },
   argTypes: {
     variant: {
       name: 'Button variant',
@@ -39,4 +48,10 @@ Secondary.args = {};
 export const Disabled = Template.bind({});
 Disabled.args = {
   disabled: true,
+};
+
+export const ButtonLink = Template.bind({});
+ButtonLink.args = {
+  as: 'a',
+  href: 'http://www.bbc.co.uk',
 };

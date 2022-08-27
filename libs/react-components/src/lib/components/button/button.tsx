@@ -5,11 +5,13 @@ export interface ButtonProps extends ComponentPropsWithRef<'button'> {
   disabled?: boolean;
   variant?: 'primary' | 'secondary';
   type: 'button' | 'reset' | 'submit';
+  as?: React.ElementType | keyof JSX.IntrinsicElements;
+  href?: string;
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ children, disabled, variant, type }, ref) => (
-    <StyledButton disabled={disabled} variant={variant} type={type} ref={ref}>
+  ({ children, ...args }, ref) => (
+    <StyledButton {...args} ref={ref}>
       {children}
     </StyledButton>
   )
