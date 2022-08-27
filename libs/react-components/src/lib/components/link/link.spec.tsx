@@ -50,4 +50,13 @@ describe('Link', () => {
       expect(inverseLinkJSON).toMatchSnapshot();
     });
   });
+  describe('Link - Options', () => {
+    it('should match the link with no text decoration snapshot', () => {
+      const noDecorationLink = createComponentJSX({
+        decoration: false,
+      } as LinkProps);
+      const noDecorationLinkJSON = renderer.create(noDecorationLink).toJSON();
+      expect(noDecorationLinkJSON).toMatchSnapshot();
+    });
+  });
 });

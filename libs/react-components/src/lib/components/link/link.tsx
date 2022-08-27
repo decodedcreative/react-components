@@ -1,7 +1,6 @@
 import { ComponentPropsWithoutRef, ReactNode } from 'react';
 import StyledLink from './link.styles';
 
-/* eslint-disable-next-line */
 export interface LinkProps extends ComponentPropsWithoutRef<'a'> {
   children: ReactNode;
   decoration: boolean;
@@ -9,10 +8,8 @@ export interface LinkProps extends ComponentPropsWithoutRef<'a'> {
   as?: React.ElementType | keyof JSX.IntrinsicElements;
 }
 
-const Link = ({ children, decoration = true, variant, ...rest }: LinkProps) => (
-  <StyledLink decoration={decoration} variant={variant} {...rest}>
-    {children}
-  </StyledLink>
+const Link = ({ children, ...args }: LinkProps) => (
+  <StyledLink {...args}>{children}</StyledLink>
 );
 
 export default Link;

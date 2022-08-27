@@ -1,4 +1,5 @@
 import { ComponentStory, Meta } from '@storybook/react';
+import styled from 'styled-components';
 import Link from './link';
 
 export default {
@@ -41,6 +42,20 @@ Inverse.parameters = {
     default: 'Dark',
   },
 };
+
+Inverse.decorators = [
+  (Story) => {
+    const StyledInverseWrapper = styled('div')`
+      background-color: #ffffff;
+      padding: 10px;
+    `;
+    return (
+      <StyledInverseWrapper>
+        <Story />
+      </StyledInverseWrapper>
+    );
+  },
+];
 
 export const NoDecoration = Template.bind({});
 NoDecoration.args = {

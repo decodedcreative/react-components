@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link Link - Options should match the link with no text decoration snapshot 1`] = `
+.c0 {
+  color: #006de3;
+  font-family: 'Source Sans Pro',sans-serif;
+  line-height: 1.5;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<a
+  className="c0"
+>
+  Button text
+</a>
+`;
+
+exports[`Link Link - Variants should match the inverse link snapshot 1`] = `
+.c0 {
+  color: #006de3;
+  font-family: 'Source Sans Pro',sans-serif;
+  line-height: 1.5;
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<a
+  className="c0"
+>
+  Button text
+</a>
+`;
+
+exports[`Link Link - Variants should match the secondary link snapshot 1`] = `
+.c0 {
+  color: #006de3;
+  font-family: 'Source Sans Pro',sans-serif;
+  line-height: 1.5;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<a
+  className="c0"
+>
+  Button text
+</a>
+`;

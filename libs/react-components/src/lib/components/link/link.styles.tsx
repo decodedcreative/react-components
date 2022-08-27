@@ -20,7 +20,7 @@ const StyledLink = styled('a')<LinkProps>`
       color: ${props.theme.colors.color10};
     `}
 
-    ${(props) =>
+  ${(props) =>
     props.decoration === false &&
     css`
       text-decoration: none;
@@ -32,9 +32,13 @@ const StyledLink = styled('a')<LinkProps>`
       background-color: transparent;
       border: 0;
       text-decoration: underline;
+      padding: 0;
 
       &:focus-visible {
-        outline: 0;
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        box-shadow: 0 0 0 2px ${props.theme.colors.color10},
+          0 0 0 4px ${props.theme.colors.interactive};
       }
     `};
 `;
