@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme } from '../../themes';
-import Typography, { TypographyProps } from './typography';
+import { Typography, TypographyProps } from './typography';
 import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
