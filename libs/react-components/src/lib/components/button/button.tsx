@@ -1,5 +1,5 @@
 import { ComponentPropsWithRef, forwardRef, ReactNode } from 'react';
-import StyledButton from './button.styles';
+import * as S from './button.styles';
 export interface ButtonProps extends ComponentPropsWithRef<'button'> {
   children: ReactNode;
   disabled?: boolean;
@@ -9,12 +9,10 @@ export interface ButtonProps extends ComponentPropsWithRef<'button'> {
   href?: string;
 }
 
-const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ children, ...args }, ref) => (
-    <StyledButton {...args} ref={ref}>
+    <S.Button {...args} ref={ref}>
       {children}
-    </StyledButton>
+    </S.Button>
   )
 );
-
-export default Button;

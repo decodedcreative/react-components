@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { LinkProps } from './link';
 
-const StyledLink = styled('a')<LinkProps>`
+export const Link = styled('a')<LinkProps>`
   color: ${(props) => props.theme.colors.interactive};
   font-family: ${(props) => props.theme.typography.fontFamily};
   font-size: ${(props) => props.theme.typography.fontSize};
@@ -42,5 +42,3 @@ const StyledLink = styled('a')<LinkProps>`
       }
     `};
 `;
-
-export default StyledLink;

@@ -1,5 +1,5 @@
 import { ComponentPropsWithoutRef, ReactNode } from 'react';
-import StyledLink from './link.styles';
+import * as S from './link.styles';
 
 export interface LinkProps extends ComponentPropsWithoutRef<'a'> {
   children: ReactNode;
@@ -8,8 +8,6 @@ export interface LinkProps extends ComponentPropsWithoutRef<'a'> {
   as?: React.ElementType | keyof JSX.IntrinsicElements;
 }
 
-const Link = ({ children, ...args }: LinkProps) => (
-  <StyledLink {...args}>{children}</StyledLink>
+export const Link = ({ children, ...args }: LinkProps) => (
+  <S.Link {...args}>{children}</S.Link>
 );
-
-export default Link;

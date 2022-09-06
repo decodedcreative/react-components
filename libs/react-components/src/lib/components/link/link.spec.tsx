@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme } from '../../themes';
-import Link, { LinkProps } from './link';
+import { Link, LinkProps } from './link';
 import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';

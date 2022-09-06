@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { TypographyProps } from './typography';
 
-const StyledTypography = styled('p')<TypographyProps>`
+export const Typography = styled('p')<TypographyProps>`
   font-family: ${(props) => props.theme.typography.fontFamily};
   line-height: ${(props) => props.theme.typography.lineHeight};
   margin: 0;
@@ -11,7 +11,7 @@ const StyledTypography = styled('p')<TypographyProps>`
   ${(props) =>
     props.marginBottom &&
     css`
-      margin-bottom: ${props.theme.spacing.spacingMd};
+      margin-bottom: ${props.theme.spacing.md};
     `};
 
   ${(props) =>
@@ -80,5 +80,3 @@ const StyledTypography = styled('p')<TypographyProps>`
       font-weight: ${props.theme.typography.weights.bold};
     `};
 `;
-
-export default StyledTypography;

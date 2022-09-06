@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { ButtonProps } from './button';
 
-const StyledButton = styled('button')<ButtonProps>`
+export const Button = styled('button')<ButtonProps>`
   background-color: ${(props) => props.theme.colors.color10};
   border: ${(props) => props.theme.components.button.borderWidth} solid
     ${(props) => props.theme.colors.interactive};
@@ -43,7 +43,6 @@ const StyledButton = styled('button')<ButtonProps>`
     props.as === 'a' &&
     css`
       display: inline-flex;
+      text-decoration: none;
     `};
 `;
-
-export default StyledButton;

@@ -4,6 +4,7 @@ exports[`Link Link - Options should match the link with no text decoration snaps
 .c0 {
   color: #006de3;
   font-family: 'Source Sans Pro',sans-serif;
+  font-size: 1rem;
   line-height: 1.5;
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -21,6 +22,7 @@ exports[`Link Link - Variants should match the inverse link snapshot 1`] = `
 .c0 {
   color: #006de3;
   font-family: 'Source Sans Pro',sans-serif;
+  font-size: 1rem;
   line-height: 1.5;
   cursor: pointer;
   color: #ffffff;
@@ -39,6 +41,7 @@ exports[`Link Link - Variants should match the secondary link snapshot 1`] = `
 .c0 {
   color: #006de3;
   font-family: 'Source Sans Pro',sans-serif;
+  font-size: 1rem;
   line-height: 1.5;
   cursor: pointer;
   -webkit-text-decoration: none;

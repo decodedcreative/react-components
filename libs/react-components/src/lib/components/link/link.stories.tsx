@@ -1,6 +1,6 @@
 import { ComponentStory, Meta } from '@storybook/react';
 import styled from 'styled-components';
-import Link from './link';
+import { Link } from './link';
 
 export default {
   component: Link,
