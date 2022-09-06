@@ -1,5 +1,6 @@
 export default {
   fontFamily: "'Source Sans Pro', sans-serif",
+  fontSize: '1rem',
   sizes: {
     default: '1rem',
     xs: '0.75rem',

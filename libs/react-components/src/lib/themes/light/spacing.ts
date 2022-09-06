@@ -1,9 +1,9 @@
 export default {
-  spacing2Xs: '0.25rem',
-  spacingXs: '0.5rem',
-  spacingSm: '0.75rem',
-  spacingMd: '1rem',
-  spacingLg: '1.5rem',
-  spacingXl: '2rem',
-  spacing2Xl: '2.5rem',
+  xxs: '0.25rem',
+  xs: '0.5rem',
+  sm: '0.75rem',
+  md: '1rem',
+  lg: '1.5rem',
+  xl: '2rem',
+  xxl: '2.5rem',
 };
