@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section Section - Variants should match the primary section snapshot 1`] = `
+.c0 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+<section
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    Section text here
+  </div>
+</section>
+`;
+
+exports[`Section Section - Variants should match the secondary section snapshot 1`] = `
+.c0 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+<section
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    Section text here
+  </div>
+</section>
+`;
