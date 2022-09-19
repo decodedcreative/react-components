@@ -2,7 +2,7 @@ import { useFormik } from 'formik';
 import { userSchema, User } from './common';
 import {
   Form,
-  FormTextField,
+  TextField,
   Section,
   Typography,
 } from '../../../../../libs/react-components/src/lib/components';
@@ -37,13 +37,13 @@ const FormikForms = () => {
             }
           >
             <Form.Item label={<Typography>Title:</Typography>}>
-              <FormTextField />
+              <TextField />
             </Form.Item>
             <Form.Item label={<Typography>First Name:</Typography>}>
-              <FormTextField />
+              <TextField />
             </Form.Item>
             <Form.Item label={<Typography>Surname:</Typography>}>
-              <FormTextField />
+              <TextField />
             </Form.Item>
           </Form.Section>
         </Form>
