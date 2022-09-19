@@ -1,2 +1,2 @@
 export * from './form';
-export * from './form-textfield';
+export * from './textfield';

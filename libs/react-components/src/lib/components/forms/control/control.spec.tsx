@@ -1,25 +1,25 @@
 import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
-import { lightTheme } from '../../../../themes';
-import { FormItem, FormItemProps } from './form-item';
+import { lightTheme } from '../../../themes';
+import { Control, ControlProps } from './control';
 import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
 const WithTheme = () => (
   <ThemeProvider theme={lightTheme}>
-    <FormItem label="test">
+    <Control>
       <p>Form content here</p>
-    </FormItem>
+    </Control>
   </ThemeProvider>
 );
 
-const createComponentJSX = ({}: FormItemProps) => <WithTheme />;
-const createComponentRender = ({}: FormItemProps) => render(<WithTheme />);
+const createComponentJSX = ({}: ControlProps) => <WithTheme />;
+const createComponentRender = ({}: ControlProps) => render(<WithTheme />);
 
-describe('Form Item', () => {
+describe('Control', () => {
   it('should render successfully', () => {
-    const component = createComponentRender({} as FormItemProps);
+    const component = createComponentRender({} as ControlProps);
     expect(component).toBeTruthy();
   });
 });

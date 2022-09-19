@@ -6,7 +6,7 @@ import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
-const createComponentJSX = ({
+const WithTheme = ({
   children = 'Button text',
   variant,
   disabled,
@@ -18,6 +18,18 @@ const createComponentJSX = ({
       {children}
     </Button>
   </ThemeProvider>
+);
+
+const createComponentJSX = ({
+  children = 'Button text',
+  variant,
+  disabled,
+  type = 'button',
+  as,
+}: ButtonProps) => (
+  <WithTheme variant={variant} disabled={disabled} type={type} as={as}>
+    {children}
+  </WithTheme>
 );
 
 const createComponentRender = ({
