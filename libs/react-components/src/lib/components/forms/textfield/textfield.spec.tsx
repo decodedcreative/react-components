@@ -15,7 +15,7 @@ const WithTheme = () => (
 const createComponentJSX = ({}: TextFieldProps) => <WithTheme />;
 const createComponentRender = ({}: TextFieldProps) => render(<WithTheme />);
 
-describe('Form', () => {
+describe('Textfield', () => {
   it('should render successfully', () => {
     const component = createComponentRender({} as TextFieldProps);
     expect(component).toBeTruthy();

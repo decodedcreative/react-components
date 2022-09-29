@@ -40,11 +40,9 @@ const createComponentRender = ({
   as,
 }: ButtonProps) =>
   render(
-    <ThemeProvider theme={lightTheme}>
-      <Button variant={variant} type={type} disabled={disabled} as={as}>
-        {children}
-      </Button>
-    </ThemeProvider>
+    <WithTheme variant={variant} disabled={disabled} type={type} as={as}>
+      {children}
+    </WithTheme>
   );
 
 describe('Button', () => {
