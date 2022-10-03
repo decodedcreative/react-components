@@ -82,4 +82,12 @@ export const RadioIndicator = styled('div')`
   ${RadioInput}:checked ~ ${RadioLabel} & {
     transform: scale(1);
   }
+
+  ${RadioInput}:disabled ~ ${RadioLabel} & {
+    border-color: ${(props) => props.theme.colors.color50};
+  }
+
+  ${RadioInput}[aria-invalid="true"] ~ ${RadioLabel} & {
+    border-color: ${(props) => props.theme.colors.error};
+  }
 `;
