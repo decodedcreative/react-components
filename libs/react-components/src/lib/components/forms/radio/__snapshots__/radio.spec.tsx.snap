@@ -1,0 +1,423 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio Radio - States Radio - States - Disabled should match the Disabled Radio snapshot 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  color: #272727;
+  font-size: 1rem;
+  font-family: 'Source Sans Pro',sans-serif;
+  line-height: 1.5;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+}
+
+.c6 {
+  background-color: #ffffff;
+  border: 2px solid #8e8e8e;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.c10 {
+  margin-left: 0.75rem;
+}
+
+.c2 {
+  position: absolute;
+  opacity: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+}
+
+.c2:focus ~ .c3 .c5 {
+  box-shadow: 0 0 0 2px #ffffff,0 0 0 4px #006de3;
+  border-color: #272727;
+  outline-width: 2px;
+}
+
+.c2:checked ~ .c3 .c5 {
+  border-color: #006de3;
+}
+
+.c2:checked:disabled ~ .c3 .c5 {
+  border-color: #8e8e8e;
+}
+
+.c2:disabled ~ .c3 .c5 {
+  background-color: #f6f6f6;
+}
+
+.c2:disabled ~ .c3 .c9 {
+  color: #8e8e8e;
+}
+
+.c2[aria-invalid='true'] ~ .c3 .c5 {
+  border-color: #e90014;
+}
+
+.c8 {
+  color: #ffffff;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.05s ease-in;
+  -webkit-transition: transform 0.05s ease-in;
+  transition: transform 0.05s ease-in;
+  border-width: calc(16px / 2);
+  border-style: solid;
+  border-color: #006de3;
+  border-radius: 50%;
+}
+
+.c1:checked ~ .c3 .c7 {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1:disabled ~ .c3 .c7 {
+  border-color: #8e8e8e;
+}
+
+.c1[aria-invalid="true"] ~ .c3 .c7 {
+  border-color: #e90014;
+}
+
+<div
+  className="c0"
+  label="Radio label"
+>
+  <input
+    className="c1 c2"
+    disabled={true}
+    type="Radio"
+  />
+  <label
+    className="c3 c4"
+  >
+    <div
+      className="c5 c6"
+    >
+      <div
+        className="c7 c8"
+      />
+    </div>
+    <span
+      className="c9 c10"
+    >
+      Radio label
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Radio Radio - States Radio - States - Error should match the Radio With Error snapshot 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  color: #272727;
+  font-size: 1rem;
+  font-family: 'Source Sans Pro',sans-serif;
+  line-height: 1.5;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+}
+
+.c6 {
+  background-color: #ffffff;
+  border: 2px solid #8e8e8e;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.c10 {
+  margin-left: 0.75rem;
+}
+
+.c2 {
+  position: absolute;
+  opacity: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+}
+
+.c2:focus ~ .c3 .c5 {
+  box-shadow: 0 0 0 2px #ffffff,0 0 0 4px #006de3;
+  border-color: #272727;
+  outline-width: 2px;
+}
+
+.c2:checked ~ .c3 .c5 {
+  border-color: #006de3;
+}
+
+.c2:checked:disabled ~ .c3 .c5 {
+  border-color: #8e8e8e;
+}
+
+.c2:disabled ~ .c3 .c5 {
+  background-color: #f6f6f6;
+}
+
+.c2:disabled ~ .c3 .c9 {
+  color: #8e8e8e;
+}
+
+.c2[aria-invalid='true'] ~ .c3 .c5 {
+  border-color: #e90014;
+}
+
+.c8 {
+  color: #ffffff;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.05s ease-in;
+  -webkit-transition: transform 0.05s ease-in;
+  transition: transform 0.05s ease-in;
+  border-width: calc(16px / 2);
+  border-style: solid;
+  border-color: #006de3;
+  border-radius: 50%;
+}
+
+.c1:checked ~ .c3 .c7 {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1:disabled ~ .c3 .c7 {
+  border-color: #8e8e8e;
+}
+
+.c1[aria-invalid="true"] ~ .c3 .c7 {
+  border-color: #e90014;
+}
+
+<div
+  className="c0"
+  label="Radio label"
+>
+  <input
+    aria-invalid={true}
+    className="c1 c2"
+    type="Radio"
+  />
+  <label
+    className="c3 c4"
+  >
+    <div
+      className="c5 c6"
+    >
+      <div
+        className="c7 c8"
+      />
+    </div>
+    <span
+      className="c9 c10"
+    >
+      Radio label
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Radio should match the default snapshot 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  color: #272727;
+  font-size: 1rem;
+  font-family: 'Source Sans Pro',sans-serif;
+  line-height: 1.5;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+}
+
+.c6 {
+  background-color: #ffffff;
+  border: 2px solid #8e8e8e;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.c10 {
+  margin-left: 0.75rem;
+}
+
+.c2 {
+  position: absolute;
+  opacity: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+}
+
+.c2:focus ~ .c3 .c5 {
+  box-shadow: 0 0 0 2px #ffffff,0 0 0 4px #006de3;
+  border-color: #272727;
+  outline-width: 2px;
+}
+
+.c2:checked ~ .c3 .c5 {
+  border-color: #006de3;
+}
+
+.c2:checked:disabled ~ .c3 .c5 {
+  border-color: #8e8e8e;
+}
+
+.c2:disabled ~ .c3 .c5 {
+  background-color: #f6f6f6;
+}
+
+.c2:disabled ~ .c3 .c9 {
+  color: #8e8e8e;
+}
+
+.c2[aria-invalid='true'] ~ .c3 .c5 {
+  border-color: #e90014;
+}
+
+.c8 {
+  color: #ffffff;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.05s ease-in;
+  -webkit-transition: transform 0.05s ease-in;
+  transition: transform 0.05s ease-in;
+  border-width: calc(16px / 2);
+  border-style: solid;
+  border-color: #006de3;
+  border-radius: 50%;
+}
+
+.c1:checked ~ .c3 .c7 {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1:disabled ~ .c3 .c7 {
+  border-color: #8e8e8e;
+}
+
+.c1[aria-invalid="true"] ~ .c3 .c7 {
+  border-color: #e90014;
+}
+
+<div
+  className="c0"
+  label="Radio label"
+>
+  <input
+    className="c1 c2"
+    type="Radio"
+  />
+  <label
+    className="c3 c4"
+  >
+    <div
+      className="c5 c6"
+    >
+      <div
+        className="c7 c8"
+      />
+    </div>
+    <span
+      className="c9 c10"
+    >
+      Radio label
+    </span>
+  </label>
+</div>
+`;
