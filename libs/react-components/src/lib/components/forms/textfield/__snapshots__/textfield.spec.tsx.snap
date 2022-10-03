@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textfield TextField - States TextField - States - Disabled should match the Disabled TextField snapshot 1`] = `
+.c0 {
+  width: 100%;
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  color: #272727;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 2px solid #8e8e8e;
+}
+
+.c2:focus::not(.c1:focus-visible) {
+  outline: 0;
+  border-color: unset;
+}
+
+.c2:focus-visible {
+  color: #515151;
+  border-color: #006de3;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #ffffff,0 0 0 4px #006de3;
+}
+
+.c2:disabled {
+  color: #8e8e8e;
+  cursor: not-allowed;
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1 c2"
+    disabled={true}
+    type="text"
+  />
+</div>
+`;
+
+exports[`Textfield TextField - States TextField - States - Error should match the TextField With Error snapshot 1`] = `
+.c0 {
+  width: 100%;
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  color: #272727;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 2px solid #8e8e8e;
+  border-color: #e90014;
+  color: #e90014;
+}
+
+.c2:focus::not(.c1:focus-visible) {
+  outline: 0;
+  border-color: unset;
+}
+
+.c2:focus-visible {
+  color: #515151;
+  border-color: #006de3;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #ffffff,0 0 0 4px #006de3;
+}
+
+.c2:disabled {
+  color: #8e8e8e;
+  cursor: not-allowed;
+}
+
+<div
+  className="c0"
+>
+  <input
+    aria-invalid={true}
+    className="c1 c2"
+    type="text"
+  />
+</div>
+`;
+
+exports[`Textfield should match the default snapshot 1`] = `
+.c0 {
+  width: 100%;
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  color: #272727;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 2px solid #8e8e8e;
+}
+
+.c2:focus::not(.c1:focus-visible) {
+  outline: 0;
+  border-color: unset;
+}
+
+.c2:focus-visible {
+  color: #515151;
+  border-color: #006de3;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #ffffff,0 0 0 4px #006de3;
+}
+
+.c2:disabled {
+  color: #8e8e8e;
+  cursor: not-allowed;
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1 c2"
+    type="text"
+  />
+</div>
+`;
