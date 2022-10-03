@@ -15,6 +15,13 @@ export default {
   },
   argTypes: {},
   args: {},
+  decorators: [
+    (Story) => (
+      <div style={{ width: '400px' }}>
+        <Story />
+      </div>
+    ),
+  ],
 } as ComponentMeta<typeof TextField>;
 
 const Template: ComponentStory<typeof TextField> = (args) => (
