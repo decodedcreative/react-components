@@ -6,9 +6,11 @@ export interface FormItemProps {
   label: ReactNode;
   description?: ReactNode;
   error?: ReactNode;
+  layout?: 'inline' | 'inline-md-up';
 }
 
-export const FormItem = ({ ...args }: FormItemProps) => {
+export const FormItem = ({ layout, ...args }: FormItemProps) => {
+  const contentProps = { layout };
   const { children, label, description, error } = args;
   return (
     <S.FormItem {...args}>
@@ -16,7 +18,7 @@ export const FormItem = ({ ...args }: FormItemProps) => {
       {description ? (
         <S.FormItemDescription>{description}</S.FormItemDescription>
       ) : null}
-      <S.FormItemContent>{children}</S.FormItemContent>
+      <S.FormItemContent {...contentProps}>{children}</S.FormItemContent>
       {error ? <S.FormItemMessage>{error}</S.FormItemMessage> : null}
     </S.FormItem>
   );

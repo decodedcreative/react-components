@@ -6,9 +6,9 @@ import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
-const WithTheme = () => (
+const WithTheme = ({ ...props }) => (
   <ThemeProvider theme={lightTheme}>
-    <FormItem label="test">
+    <FormItem label="test" {...props}>
       <p>Form content here</p>
     </FormItem>
   </ThemeProvider>
