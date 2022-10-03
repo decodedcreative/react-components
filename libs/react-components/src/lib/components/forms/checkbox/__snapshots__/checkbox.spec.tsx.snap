@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Checkbox Checkbox - States Checkbox - States - Disabled should match the disabled checkbox snapshot 1`] = `
+exports[`Checkbox Checkbox - States Checkbox - States - Disabled should match the Disabled Checkbox snapshot 1`] = `
 .c9 {
   display: inline-block;
   vertical-align: middle;
@@ -154,7 +154,7 @@ exports[`Checkbox Checkbox - States Checkbox - States - Disabled should match th
 </div>
 `;
 
-exports[`Checkbox Checkbox - States Checkbox - States - Error should match the checkbox with error snapshot 1`] = `
+exports[`Checkbox Checkbox - States Checkbox - States - Error should match the Checkbox With Error snapshot 1`] = `
 .c9 {
   display: inline-block;
   vertical-align: middle;
@@ -275,6 +275,159 @@ exports[`Checkbox Checkbox - States Checkbox - States - Error should match the c
 >
   <input
     aria-invalid={true}
+    className="c1 c2"
+    type="checkbox"
+  />
+  <label
+    className="c3 c4"
+  >
+    <div
+      className="c5 c6"
+    >
+      <div
+        className="c7 c8"
+      >
+        <svg
+          aria-hidden="true"
+          className="c9 c10 c11"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      className="c12 c13"
+    />
+  </label>
+</div>
+`;
+
+exports[`Checkbox should match the default snapshot 1`] = `
+.c9 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  color: #272727;
+  font-size: 1rem;
+  font-family: 'Source Sans Pro',sans-serif;
+  line-height: 1.5;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+}
+
+.c6 {
+  background-color: #ffffff;
+  border: 2px solid #8e8e8e;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.c13 {
+  margin-left: 0.75rem;
+}
+
+.c11 {
+  color: #006de3;
+  width: 24px;
+  height: 24px;
+}
+
+.c2 {
+  position: absolute;
+  opacity: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+}
+
+.c2:focus ~ .c3 .c5 {
+  box-shadow: 0 0 0 2px #ffffff,0 0 0 4px #006de3;
+  border-color: #272727;
+  outline-width: 2px;
+}
+
+.c2:checked::not(.c1:disabled) ~ .c3 .c5 {
+  border-color: #006de3;
+}
+
+.c2:disabled ~ .c3 .c5 {
+  background-color: #f6f6f6;
+}
+
+.c2:disabled ~ .c3 .c12 {
+  color: #8e8e8e;
+}
+
+.c2:disabled ~ .c3 .c10 {
+  color: #8e8e8e;
+}
+
+.c2[aria-invalid='true'] ~ .c3 .c5 {
+  border-color: #e90014;
+}
+
+.c2[aria-invalid='true'] ~ .c3 .c10 {
+  color: #e90014;
+}
+
+.c8 {
+  color: #ffffff;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.05s ease-in;
+  -webkit-transition: transform 0.05s ease-in;
+  transition: transform 0.05s ease-in;
+}
+
+.c1:checked ~ .c3 .c7 {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+<div
+  className="c0"
+>
+  <input
     className="c1 c2"
     type="checkbox"
   />

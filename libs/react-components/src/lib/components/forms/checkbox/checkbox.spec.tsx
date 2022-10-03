@@ -24,6 +24,12 @@ describe('Checkbox', () => {
     expect(component).toBeTruthy();
   });
 
+  it('should match the default snapshot', () => {
+    const defaultCheckbox = createComponentJSX({} as CheckboxProps);
+    const defaultCheckboxJSON = renderer.create(defaultCheckbox).toJSON();
+    expect(defaultCheckboxJSON).toMatchSnapshot();
+  });
+
   describe('Checkbox - States', () => {
     describe('Checkbox - States - Error', () => {
       it('should have an aria-invalid attribute on its input if in an error state', () => {
@@ -35,7 +41,7 @@ describe('Checkbox', () => {
         const input = component.getByTestId('checkbox-input');
         expect(input).toHaveAttribute('aria-invalid');
       });
-      it('should match the checkbox with error snapshot', () => {
+      it('should match the Checkbox With Error snapshot', () => {
         const errorCheckbox = createComponentJSX({
           'aria-invalid': true,
         } as CheckboxProps);
@@ -53,7 +59,7 @@ describe('Checkbox', () => {
         const input = component.getByTestId('checkbox-input');
         expect(input).toBeDisabled();
       });
-      it('should match the disabled checkbox snapshot', () => {
+      it('should match the Disabled Checkbox snapshot', () => {
         const disabledCheckbox = createComponentJSX({
           disabled: true,
         } as CheckboxProps);
