@@ -1,0 +1,356 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select Select - States Select - States - Disabled should match the Disabled Select snapshot 1`] = `
+.c5 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c0 {
+  position: relative;
+  width: 100%;
+}
+
+.c2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  color: #272727;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 2px solid #8e8e8e;
+}
+
+.c2:focus::not(.c1:focus-visible) {
+  outline: 0;
+  border-color: unset;
+}
+
+.c2:focus-visible {
+  color: #515151;
+  border-color: #006de3;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #ffffff,0 0 0 4px #006de3;
+}
+
+.c2:disabled {
+  color: #8e8e8e;
+}
+
+.c4 {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.c7 {
+  width: 24px;
+  height: 24px;
+  color: #006de3;
+}
+
+.c1:disabled ~ .c3 .c6 {
+  color: #8e8e8e;
+}
+
+.c1[aria-invalid="true"] ~ .c3 .c6 {
+  color: #e90014;
+}
+
+<div
+  className="c0"
+>
+  <select
+    className="c1 c2"
+    disabled={true}
+  >
+    <option
+      value="1"
+    >
+      1
+    </option>
+    <option
+      value="2"
+    >
+      2
+    </option>
+    <option
+      value="3"
+    >
+      3
+    </option>
+    <option
+      value="4"
+    >
+      4
+    </option>
+  </select>
+  <span
+    className="c3 c4"
+  >
+    <svg
+      aria-hidden="true"
+      className="c5 c6 c7"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Select Select - States Select - States - Error should match the Select With Error snapshot 1`] = `
+.c5 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c0 {
+  position: relative;
+  width: 100%;
+}
+
+.c2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  color: #272727;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 2px solid #8e8e8e;
+  border-color: #e90014;
+  color: #e90014;
+}
+
+.c2:focus::not(.c1:focus-visible) {
+  outline: 0;
+  border-color: unset;
+}
+
+.c2:focus-visible {
+  color: #515151;
+  border-color: #006de3;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #ffffff,0 0 0 4px #006de3;
+}
+
+.c2:disabled {
+  color: #8e8e8e;
+}
+
+.c4 {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.c7 {
+  width: 24px;
+  height: 24px;
+  color: #006de3;
+}
+
+.c1:disabled ~ .c3 .c6 {
+  color: #8e8e8e;
+}
+
+.c1[aria-invalid="true"] ~ .c3 .c6 {
+  color: #e90014;
+}
+
+<div
+  className="c0"
+>
+  <select
+    aria-invalid={true}
+    className="c1 c2"
+  >
+    <option
+      value="1"
+    >
+      1
+    </option>
+    <option
+      value="2"
+    >
+      2
+    </option>
+    <option
+      value="3"
+    >
+      3
+    </option>
+    <option
+      value="4"
+    >
+      4
+    </option>
+  </select>
+  <span
+    className="c3 c4"
+  >
+    <svg
+      aria-hidden="true"
+      className="c5 c6 c7"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Select should match the default snapshot 1`] = `
+.c5 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c0 {
+  position: relative;
+  width: 100%;
+}
+
+.c2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  color: #272727;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 2px solid #8e8e8e;
+}
+
+.c2:focus::not(.c1:focus-visible) {
+  outline: 0;
+  border-color: unset;
+}
+
+.c2:focus-visible {
+  color: #515151;
+  border-color: #006de3;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #ffffff,0 0 0 4px #006de3;
+}
+
+.c2:disabled {
+  color: #8e8e8e;
+}
+
+.c4 {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.c7 {
+  width: 24px;
+  height: 24px;
+  color: #006de3;
+}
+
+.c1:disabled ~ .c3 .c6 {
+  color: #8e8e8e;
+}
+
+.c1[aria-invalid="true"] ~ .c3 .c6 {
+  color: #e90014;
+}
+
+<div
+  className="c0"
+>
+  <select
+    className="c1 c2"
+  >
+    <option
+      value="1"
+    >
+      1
+    </option>
+    <option
+      value="2"
+    >
+      2
+    </option>
+    <option
+      value="3"
+    >
+      3
+    </option>
+    <option
+      value="4"
+    >
+      4
+    </option>
+  </select>
+  <span
+    className="c3 c4"
+  >
+    <svg
+      aria-hidden="true"
+      className="c5 c6 c7"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
+      />
+    </svg>
+  </span>
+</div>
+`;
